@@ -1,52 +1,129 @@
-# BookMyShow Clone
+# BookMyShow Clone (Frontend)
 
-A full-stack web application clone of BookMyShow built with React and Node.js.
+A frontend implementation of BookMyShow, focusing on the user interface and design. This project currently includes the static frontend part with plans to integrate backend functionality in the future.
 
 ## Features
 
-- User Authentication (Signup/Login)
-- Movie Listings and Details
-- Theater Listings
-- Show Timings
-- Seat Selection
-- Booking System
-- Payment Integration
-- User Profile and Booking History
+### Current Frontend Features
+- Responsive design for all devices
+- Movie listings and details view
+- Event listings and details view
+- Seat selection interface
+- User authentication pages (UI only)
+- Booking flow interface
+- Payment interface
+- User profile interface
+
+### Planned Backend Features
+- User authentication (Sign up, Login, Logout)
+- Database integration
+- Real-time seat booking
+- Payment processing
+- Booking management
+- User profile management
 
 ## Tech Stack
 
-- Frontend: React.js
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Authentication: JWT
-- Styling: Tailwind CSS
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- Font Awesome Icons
 
-## Setup Instructions
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   cd frontend
-   npm install
-   ```
-3. Create a .env file in the root directory with the following variables:
-   ```
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   PORT=5000
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+### Future Backend Plans
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
 
 ## Project Structure
-
 ```
-bookmyshow-clone/
-├── frontend/          # React frontend
-├── backend/           # Node.js backend
-├── package.json       # Project dependencies
-└── README.md         # Project documentation
-``` 
+BookMyShow-Clone/
+├── index.html          # Main landing page
+├── css/
+│   └── style.css      # Main stylesheet
+├── js/
+│   └── script.js      # Frontend JavaScript
+├── images/            # Image assets
+├── README.md
+└── .gitignore
+```
+
+## Getting Started
+
+### Prerequisites
+- Web browser
+- Code editor
+- Basic understanding of HTML, CSS, and JavaScript
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/BookMyShow-Clone.git
+cd BookMyShow-Clone
+```
+
+2. Open `index.html` in your web browser to view the project
+
+## Features in Detail
+
+### Movie Section
+- Browse movies by categories
+- View movie details and showtimes
+- Interactive seat selection interface
+- Booking flow UI
+- Payment interface
+
+### Event Section
+- Browse events by categories
+- View event details
+- Ticket booking interface
+- Payment interface
+
+### User Interface
+- Login/Signup pages
+- User profile interface
+- Booking history view
+- Preferences management
+
+## Future Enhancements
+
+### Backend Integration
+- User authentication system
+- Database for movies and events
+- Real-time seat booking system
+- Payment gateway integration
+- User data management
+
+### Additional Features
+- Search functionality
+- Filters and sorting
+- User reviews and ratings
+- Social media integration
+- Email notifications
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- BookMyShow for design inspiration
+- Bootstrap for the frontend framework
+- Font Awesome for icons
+
+## Contact
+
+Your Name - your.email@example.com
+Project Link: [https://github.com/yourusername/BookMyShow-Clone](https://github.com/yourusername/BookMyShow-Clone) 
