@@ -1,0 +1,442 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Navigation Styles */
+.top-nav {
+    background-color: #ff6666 !important;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.secondary-nav {
+    background-color: #ff9999 !important;
+    padding: 8px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 8px 15px !important;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+/* Location Selector */
+.location-selector {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.location-selector i {
+    margin-right: 8px;
+}
+
+.location-selector select {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 4px 8px;
+    font-size: 0.9rem;
+}
+
+.location-selector select option {
+    background-color: #ff6666;
+    color: white;
+}
+
+/* Search Box */
+.search-box input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 250px;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-box input:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    box-shadow: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 992px) {
+    .search-box input {
+        width: 200px;
+    }
+    
+    .nav-link {
+        padding: 8px 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        display: none;
+    }
+    
+    .location-selector {
+        display: none;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(255, 102, 102, 0.7), rgba(255, 153, 153, 0.7)), url('../images/hero-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 102, 102, 0.6), rgba(255, 153, 153, 0.4));
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-buttons .btn-light {
+    background-color: white;
+    color: #ff6666;
+    border: none;
+}
+
+.hero-buttons .btn-light:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-buttons .btn-outline-light:hover {
+    background-color: white;
+    color: #ff6666;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text {
+        font-size: 1.1rem;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .hero-buttons .btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+/* Movie Card Styles */
+.movie-card {
+    border: 1px solid #ff9999;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 153, 153, 0.2);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.movie-card .card-body {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card .card-title {
+    color: #ff6666;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.movie-card .card-text {
+    color: #666;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+/* Event Card Styles */
+.event-card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 5px rgba(255, 153, 153, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ff9999;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    color: #ff6666;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.event-card .event-date {
+    color: #666;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+/* Row adjustments for better spacing */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 -4px;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px;
+}
+
+/* Button Styles */
+.btn-book {
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+    background-color: #ff9999;
+    color: white;
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #ff6666;
+}
+
+/* Section Headers */
+h2 {
+    color: #ff6666;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6666;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.app-download h6 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.payment-methods {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.payment-methods i {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .footer-heading {
+        margin-top: 20px;
+    }
+    
+    .payment-methods {
+        margin-top: 20px;
+        text-align: left !important;
+    }
+}
+
+/* Rating Stars */
+.text-warning {
+    color: #ff6666 !important;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.movie-card, .event-card {
+    animation: fadeIn 0.5s ease-out;
+} 
